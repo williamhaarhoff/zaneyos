@@ -8,7 +8,6 @@ in {
     ./bat.nix
     ./btop.nix
     ./cava.nix
-    ./code.nix
     ./emoji.nix
     ./eza.nix
     ./fastfetch
