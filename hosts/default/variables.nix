@@ -4,9 +4,12 @@
   gitEmail = "tylerzanekelley@gmail.com";
 
   # Hyprland Settings
-  # ex: extraMonitorSettings = "monitor = Virtual-1,1920x1080@60,auto,1";
-  # ex: extraMonitorSettings = "monitor = HDMI-A-1,1920x1080@60,auto,1";
-  extraMonitorSettings = "";
+  # ex: extraMonitorSettings = "monitor = DVI-I-1,1920x1080@60,auto,1";
+  # ex: extraMonitorSettings = "monitor = DP-1,1920x1080@60,auto,1";
+  extraMonitorSettings = " 
+  monitor=DP-1,1920x1080@60,0x0,auto
+  monitor=DVI-I-1,1920x1080@60,1920x0,auto
+  ";
 
   # Waybar Settings
   clock24h = false;
@@ -28,7 +31,7 @@
   printEnable = false;
 
   # Set Stylix Image
-  stylixImage = ../../wallpapers/AnimeGirlNightSky.jpg;
+  stylixImage = ../../wallpapers/beautifulmountainscape.jpg;
 
   # Set Waybar
   #  Available Options:
