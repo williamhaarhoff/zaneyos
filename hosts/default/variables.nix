@@ -1,7 +1,7 @@
 {
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "Tyler Kelley";
-  gitEmail = "tylerzanekelley@gmail.com";
+  gitUsername = "Will Haarhoff";
+  gitEmail = "williamhaarhoff@gmail.com";
 
   # Hyprland Settings
   # ex: extraMonitorSettings = "monitor = DVI-I-1,1920x1080@60,auto,1";
@@ -12,7 +12,7 @@
   ";
 
   # Waybar Settings
-  clock24h = false;
+  clock24h = true;
 
   # Program Options
   browser = "brave"; # Set Default Browser (google-chrome-stable for google-chrome)
@@ -31,7 +31,7 @@
   printEnable = false;
 
   # Set Stylix Image
-  stylixImage = ../../wallpapers/beautifulmountainscape.jpg;
+  stylixImage = ../../wallpapers/mountainscapedark.jpg;
 
   # Set Waybar
   #  Available Options:
