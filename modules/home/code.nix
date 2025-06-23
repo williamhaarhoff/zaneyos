@@ -12,7 +12,6 @@
       twxs.cmake
       ms-python.python
       ms-python.vscode-pylance
-      #ms-vscode.cpptools-extension-pack
     ];
     # profiles.default.userSettings = {
     #   "workbench.colorCustomizations" = {
