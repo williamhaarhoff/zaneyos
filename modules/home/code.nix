@@ -7,7 +7,7 @@
       yzhang.markdown-all-in-one
       bbenoist.nix
       llvm-vs-code-extensions.vscode-clangd
-      ms-vscode.cpptools
+      #ms-vscode.cpptools
       mkhl.direnv
       twxs.cmake
       ms-python.python
