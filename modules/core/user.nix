@@ -12,9 +12,11 @@ in {
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = false;
+
     backupFileExtension = "backup";
     extraSpecialArgs = {inherit inputs username host profile;};
     users.${username} = {
+      nixpkgs.config.allowUnfree = true;
       imports = [./../home];
       home = {
         username = "${username}";

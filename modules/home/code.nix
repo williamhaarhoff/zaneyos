@@ -1,5 +1,4 @@
-{pkgs, config, ...}:
-{
+{pkgs, ...}: {
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
@@ -13,15 +12,15 @@
       twxs.cmake
       ms-python.python
       ms-python.vscode-pylance
-      ms-vscode.cpptools-extension-pack
+      #ms-vscode.cpptools-extension-pack
     ];
-    profiles.default.userSettings = {
-      "workbench.colorCustomizations" = {
-        "[Stylix]" = {
-          "editor.wordHighlightBackground"  = "#${colors.base02}66";
-          "editor.hoverHighlightBackground" = "#${colors.base02}66";
-        };
-      };
-    };
+    # profiles.default.userSettings = {
+    #   "workbench.colorCustomizations" = {
+    #     "[Stylix]" = {
+    #       "editor.wordHighlightBackground"  = "#${colors.base02}66";
+    #       "editor.hoverHighlightBackground" = "#${colors.base02}66";
+    #     };
+    #   };
+    # };
   };
 }
