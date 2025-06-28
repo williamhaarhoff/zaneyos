@@ -8,7 +8,7 @@
       bbenoist.nix
       llvm-vs-code-extensions.vscode-clangd
       #ms-vscode.cpptools
-      mkhl.direnv
+      #mkhl.direnv
       twxs.cmake
       ms-python.python
       ms-python.vscode-pylance
