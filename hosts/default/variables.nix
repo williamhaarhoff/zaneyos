@@ -31,7 +31,7 @@
   printEnable = false;
 
   # Set Stylix Image
-  stylixImage = ../../wallpapers/mountainscapedark.jpg;
+  stylixImage = ../../wallpapers/Anime-Room.png;
 
   # Set Waybar
   #  Available Options:
