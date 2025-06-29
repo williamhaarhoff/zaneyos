@@ -21,6 +21,7 @@
         integrated.fontFamilly = "nerdfont-v3";
         integrated.fontLigatures.enabled = "true";
       };
+      editor.minimap.enabled = "false";
     };
   };
 }
