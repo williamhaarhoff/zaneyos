@@ -14,13 +14,13 @@
       ms-python.python
       ms-python.vscode-pylance
     ];
-    # profiles.default.userSettings = {
-    #   "workbench.colorCustomizations" = {
-    #     "[Stylix]" = {
-    #       "editor.wordHighlightBackground"  = "#${colors.base02}66";
-    #       "editor.hoverHighlightBackground" = "#${colors.base02}66";
-    #     };
-    #   };
-    # };
+    profiles.default.userSettings = {
+      terminal = {
+        integrated.defaultProfile.linux = "zsh";
+        external.linuxExec = "kitty";
+        integrated.fontFamilly = "nerdfont-v3";
+        integrated.fontLigatures.enabled = "true";
+      };
+    };
   };
 }
