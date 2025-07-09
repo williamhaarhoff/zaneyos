@@ -37,6 +37,7 @@ in {
       "networkmanager"
       "scanner"
       "wheel"
+      "vboxusers"
     ];
     shell = pkgs.zsh;
     ignoreShellProgramCheck = true;
