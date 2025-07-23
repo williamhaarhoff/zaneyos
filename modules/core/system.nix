@@ -30,6 +30,16 @@ in {
     ZANEYOS_VERSION = "2.3.1";
     ZANEYOS = "true";
   };
+  fileSystems."/home/will/data0" = {
+    device = "/dev/disk/by-uuid/4e5360d6-5efa-45c6-b472-1f625be169ca";
+    fsType = "ext4";
+    options = ["defaults"];
+  };
+  fileSystems."/home/will/data1" = {
+    device = "/dev/disk/by-uuid/a5be17a4-f495-40b6-bfd0-6294bb765498";
+    fsType = "ext4";
+    options = ["defaults"];
+  };
   console.keyMap = "${consoleKeyMap}";
   system.stateVersion = "23.11"; # Do not change!
 }
