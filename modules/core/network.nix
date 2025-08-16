@@ -7,6 +7,7 @@
   networking = {
     hostName = "${host}";
     networkmanager.enable = true;
+    networkmanager.insertNameservers = ["1.1.1.1" "8.8.8.8"];
     timeServers = options.networking.timeServers.default ++ ["pool.ntp.org"];
     firewall = {
       enable = true;
