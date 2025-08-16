@@ -38,6 +38,8 @@ in {
       "scanner"
       "wheel"
       "vboxusers"
+      "dialout"
+      "plugdev"
     ];
     shell = pkgs.zsh;
     ignoreShellProgramCheck = true;

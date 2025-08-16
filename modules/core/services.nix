@@ -1,4 +1,8 @@
-{profile, ...}: {
+{
+  pkgs,
+  profile,
+  ...
+}: {
   # Services to start
   services = {
     libinput.enable = true; # Input Handling
@@ -8,6 +12,11 @@
     blueman.enable = true; # Bluetooth Support
     tumbler.enable = true; # Image/video preview
     gnome.gnome-keyring.enable = true;
+
+    udev.packages = [
+      pkgs.probe-rs
+      pkgs.stlink
+    ];
 
     smartd = {
       enable =
