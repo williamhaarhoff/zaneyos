@@ -171,6 +171,16 @@
         rust = {
           enable = true;
           crates.enable = true;
+          lsp.package = ["rust-analyzer"];
+          lsp.opts =  ''
+            ['rust-analyzer'] = {
+              cargo = {allFeature = true},
+              checkOnSave = true,
+              procMacro = {
+                enable = true,
+              },
+            },
+          '';
         };
       };
       visuals = {
