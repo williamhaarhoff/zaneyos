@@ -18,6 +18,29 @@
       pkgs.stlink
     ];
 
+    keyd = {
+      enable = true;
+      keyboards = {
+        default = {
+          ids = ["*"];
+          settings = {
+            main = {
+              capslock = "layer(capslock)";
+            };
+            capslock = {
+              h = "left";
+              l = "right";
+              k = "up";
+              j = "down";
+              u = "prior";
+              i = "home";
+              o = "end";
+              p = "next";
+            };
+          };
+        };
+      };
+    };
     smartd = {
       enable =
         if profile == "vm"
