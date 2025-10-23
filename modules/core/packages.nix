@@ -44,6 +44,7 @@
     hyprpicker # Color Picker
     eog # For Image Viewing
     inxi # CLI System Information Tool
+    kicad
     killall # For Killing All Instances Of Programs
     libnotify # For Notifications
     lm_sensors # Used For Getting Hardware Temps
