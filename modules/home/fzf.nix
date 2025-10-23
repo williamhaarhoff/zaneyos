@@ -29,7 +29,7 @@ in {
       "-i"
       "--no-bold"
       # "--bind='enter:execute(nvim {})'"
-      "--preview='bat --style=numbers --color=always --line-range :500 {}'"
+      #"--preview='bat --style=numbers --color=always --line-range :500 {}'"
       "--preview-window=right:60%:wrap"
     ];
   };
