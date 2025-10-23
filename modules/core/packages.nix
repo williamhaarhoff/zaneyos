@@ -64,6 +64,7 @@
     socat # Needed For Screenshots
     sox # audio support for FFMPEG
     stlink # Stlink programmer
+    stm32cubemx # Utility for configuring stm32 microcontrollers
     unrar # Tool For Handling .rar Files
     unzip # Tool For Handling .zip Files
     usbutils # Good Tools For USB Devices
