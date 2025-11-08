@@ -44,7 +44,7 @@
     hyprpicker # Color Picker
     eog # For Image Viewing
     inxi # CLI System Information Tool
-    kicad
+    #kicad
     killall # For Killing All Instances Of Programs
     libnotify # For Notifications
     lm_sensors # Used For Getting Hardware Temps
@@ -59,6 +59,7 @@
     picard # For Changing Music Metadata & Getting Cover Art
     pkg-config # Wrapper Script For Allowing Packages To Get Info On Others
     playerctl # Allows Changing Media Volume Through Scripts
+    #easyeda2kicad # Importing components from lcsc to kicad
     rhythmbox
     ripgrep # Improved Grep
     socat # Needed For Screenshots

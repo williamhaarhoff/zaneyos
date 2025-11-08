@@ -9,6 +9,7 @@
     ./nfs.nix
     ./nh.nix
     ./packages.nix
+    ./kicad.nix
     ./printing.nix
     ./security.nix
     ./services.nix
