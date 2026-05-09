@@ -17,6 +17,8 @@
     profile = "nvidia";
     username = "will";
   in {
+    overlays.default = import ./overlays/bambu-studio.nix;
+
     nixosConfigurations = {
       amd = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -26,7 +28,12 @@
           inherit host;
           inherit profile;
         };
-        modules = [./profiles/amd];
+        modules = [
+          {
+            nixpkgs.overlays = [(import ./overlays/bambu-studio)];
+          }
+          ./profiles/amd
+        ];
       };
       nvidia = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -36,7 +43,12 @@
           inherit host;
           inherit profile;
         };
-        modules = [./profiles/nvidia];
+        modules = [
+          {
+            nixpkgs.overlays = [(import ./overlays/bambu-studio.nix)];
+          }
+          ./profiles/nvidia
+        ];
       };
       nvidia-laptop = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -46,7 +58,12 @@
           inherit host;
           inherit profile;
         };
-        modules = [./profiles/nvidia-laptop];
+        modules = [
+          {
+            nixpkgs.overlays = [(import ./overlays/bambu-studio)];
+          }
+          ./profiles/nvidia-laptop
+        ];
       };
       intel = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -56,7 +73,12 @@
           inherit host;
           inherit profile;
         };
-        modules = [./profiles/intel];
+        modules = [
+          {
+            nixpkgs.overlays = [(import ./overlays/bambu-studio)];
+          }
+          ./profiles/intel
+        ];
       };
       vm = nixpkgs.lib.nixosSystem {
         inherit system;

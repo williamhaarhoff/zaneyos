@@ -23,6 +23,7 @@
   environment.systemPackages = with pkgs; [
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
+    bambu-studio # Bambu labs slicer
     bottom # btop like util
     brave # Brave Browser
     brightnessctl # For Screen Brightness Control
